@@ -1,0 +1,83 @@
+*{      /*s'applique à toute la page */
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-size: 15px;    /* définit la taille du texte de tout l"élément et permet ainsi une adaptation */
+    background-color: #e7cc35; 
+    margin: 0px;
+}
+
+header{
+    padding: 1px;
+}
+
+/* CONGIGURATION GLOBALE */
+
+#container{     /* contient tout ce qui est dans body */
+    max-width: 1024px;      /* définit la largeur maximale d'un élément */
+    margin: auto;
+    background-color: #fff;
+    
+}
+figure{
+    margin: 0;
+}
+
+#mattimg, .simp{    /* concerne les deux images de l'écran */
+    width: 100%;
+    vertical-align: bottom;     /* astuce pour éviter la zone blanche dû à l'image */
+}
+
+
+/* PARTIE PRINCIPALE */
+
+main{
+    display: flex;      /* détermine le type d'affichage d'un élément (en bloc ou en ligne) ainsi que sa disposition */
+    padding: 1em;
+    align-items: flex-start;    /* aligne tout les éléments dans le block */
+}
+
+#simpson{       /* le titre de l'article centrale */
+    color: #e7cc35;
+    font-size: 40px;
+} 
+
+article, aside{    /* concerne les 3 parties textuelles (nav à gauche, aside à droite) */
+    padding: 1em;       /* définit les écarts de remplissage sur chaques côtés d'un élément */
+}
+nav, aside{
+    flex: 1;        /* le flex permet à l'objet de définir l'espace qu'il va utiliser dans son block */
+}
+article{
+    flex: 3;
+}
+
+.bluebox{
+    background-color: #4d5cb1;
+    color: #fff;
+    text-align: center;
+}
+
+.center{    /* le titre "Matt groening" */
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;      /* supprime les puces de la liste */
+    text-decoration: underline;     /* souligne le texte */
+    margin: 0px;
+    padding: 0.5em 0em 0.5em 0em;
+    line-height: 150%;      /* agrandit l'espace entre chaques lignes */
+}
+
+
+/* LE FOND DU SITE INTERNET */
+
+
+footer{
+    background-color: rgb(11, 11, 194);
+    color: #fff;
+    text-align: center;
+}
